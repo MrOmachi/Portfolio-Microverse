@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Hello World project
+> Portfolio Microverse
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Getting Started
 
-**This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more.**
+**This is a portfolio project that includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more.**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -26,8 +26,9 @@ To get a local copy up and running follow these simple example steps.
 
 Set up folder as:
 
-1. /Hello World
-   -.github/workflows - linters.yml
+1. /Portfolio-Microverse
+   - .github/workflows - linters.yml
+   - images folder
    - Package.json
    - index.html
    - style.css
