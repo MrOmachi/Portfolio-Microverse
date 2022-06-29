@@ -63,7 +63,7 @@ body {
   display: flex;
   width: 75%;
   margin: 0 auto;
-  gap: 25px;
+  gap: 60px;
   flex-wrap: wrap;
   border-bottom: 1px grey solid;
 }
