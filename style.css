@@ -201,3 +201,11 @@ body {
   margin-bottom: 40px;
   border: none;
 }
+
+.btn:hover {
+  background-color: #7d73fc;
+}
+
+.btn:active {
+  background-color: #5e42d7;
+}
