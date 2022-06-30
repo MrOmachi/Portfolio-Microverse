@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Portfolio Microverse
+> Personal Portfolio project
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Getting Started
 
-**This is a portfolio project that includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more.**
+**This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more. It is a summary of all my works and known technologies.**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -26,14 +26,25 @@ To get a local copy up and running follow these simple example steps.
 
 Set up folder as:
 
-1. /Portfolio-Microverse
-   - .github/workflows - linters.yml
-   - images folder
-   - Package.json
-   - index.html
-   - style.css
-   - .stylelintrc.json
+1. /PORTFOLIO-MICROVERSE -.github/workflows - linters.yml
+   - images
+     - Ellipse 18.svg
+     - Ellipse 18@2x.png
+     - Ellipse 18.png
+     - Ellipse 18.svg
+     - github.png
+     - hamburger.png
+     - twitter.png
+     - Vector.png
+     - vector2.png
+     - vector3,png
    - .hintrc
+   - .stylelintrc.json
+   - index.html
+   - LICENSE
+   - Package-lock.json
+   - Package.json
+   - style.css
 
 ### Install
 
