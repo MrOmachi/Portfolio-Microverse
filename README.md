@@ -1,8 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Personal Portfolio project
+# Personal Portfolio project
 
 ## Built With
 
