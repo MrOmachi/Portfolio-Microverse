@@ -63,15 +63,9 @@ body {
   display: flex;
   width: 75%;
   margin: 0 auto;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
   border-bottom: 1px grey solid;
-}
-
-.social-media ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
 }
 
 .prog-lang-skills .prog-lan ul {
@@ -92,6 +86,19 @@ body {
 }
 
 .social-media {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media .media-icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 15px;
+}
+
+.social-media .hidden {
+  visibility: hidden;
 }
