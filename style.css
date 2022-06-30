@@ -109,3 +109,95 @@ body {
   align-items: center;
   color: #a2a3ae;
 }
+
+.recent-works {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.recent-work-container {
+  background-image: url(./images/Ellipse\ 19@2x.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: 150px;
+}
+
+.recent-work-container1 {
+  background-image: url(./images/Ellipse20.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+
+  background-position: right;
+  background-position-y: 200px;
+}
+.recent-work-container2 {
+  background-image: url(./images/Ellipse21@2x.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: 150px;
+}
+.recent-work-container3 {
+  background-image: url(./images/Ellipse22@2x.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position-y: 150px;
+  background-position: right;
+}
+
+.my-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+}
+.my-works h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 30px;
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+}
+.my-works .my-work-contain h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 55px 0;
+}
+.my-works .my-work-contain p {
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 60px 0;
+}
+
+.my-works .my-work-contain img {
+  object-fit: contain;
+}
+
+.my-works .my-work-contain ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.my-works .my-work-contain ul li {
+  border-left: 1px grey solid;
+  padding-left: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 15px;
+}
+.btn {
+  padding: 20px;
+  background-color: #7d73fc;
+  color: #edecff;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  border: none;
+}
