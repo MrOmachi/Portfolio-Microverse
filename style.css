@@ -130,12 +130,14 @@ body {
   background-position: right;
   background-position-y: 200px;
 }
+
 .recent-work-container2 {
   background-image: url(./images/Ellipse21@2x.png);
   background-repeat: no-repeat;
   background-size: 300px;
   background-position-y: 150px;
 }
+
 .recent-work-container3 {
   background-image: url(./images/Ellipse22@2x.png);
   background-repeat: no-repeat;
@@ -152,6 +154,7 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+
 .my-works h2 {
   border-bottom: 1px solid grey;
   padding-bottom: 30px;
@@ -159,12 +162,14 @@ body {
   font-size: 40px;
   font-weight: 500;
 }
+
 .my-works .my-work-contain h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   margin: 55px 0;
 }
+
 .my-works .my-work-contain p {
   color: #dcdce8;
   font-size: 20px;
@@ -192,6 +197,7 @@ body {
   line-height: 20px;
   font-size: 15px;
 }
+
 .btn {
   padding: 20px;
   background-color: #7d73fc;
