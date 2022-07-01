@@ -23,6 +23,14 @@
 
 To get a local copy up and running follow these simple example steps.
 
+## Clone The Repositiry to your local machine by following the steps below
+
+Step 1: Type the following command into a git shell
+
+git clone https://github.com/MrOmachi/Portfolio-Microverse.git
+
+Step 2: Direct a terminal into the cloned repository directory
+
 ### Prerequisites
 
 1. Node package Manager(NPM)
