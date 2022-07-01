@@ -2,14 +2,24 @@
 
 # Personal Portfolio project
 
+> This Project is a clone of a Portfolio template from figma
+
 ## Built With
 
 - HTML/CSS
 - NPM, Git, Github
 
+## Live Demo
+
+[Live Demo Link](https://mromachi.github.io/Portfolio-Microverse/)
+
 ## Getting Started
 
-**This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more. It is a summary of all my works and known technologies.**
+**this website can be viewd better on the Mobile screen size**
+
+![image](./images/portfolioImg.jpeg)
+
+**The purpose of these project is to build the Mobile interface of a portfolio website using the figma template. This project includes linters for Reporting errors in HTML, CSS and An open-source, automated tool for improving the quality of web pages, which has audits for performance, accessibility, progressive web apps, SEO and more. It is a summary of all my works**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -35,7 +45,9 @@ Set up folder as:
      - twitter.png
      - Vector.png
      - vector2.png
-     - vector3,png
+     - vector3.png
+     - portfolioImg.jpeg
+     - ImgPlaceholder.png
    - .hintrc
    - .stylelintrc.json
    - index.html
