@@ -205,6 +205,7 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
   border: none;
+  transition: all 1s linear;
 }
 
 .btn:hover {
