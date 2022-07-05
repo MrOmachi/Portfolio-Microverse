@@ -169,6 +169,14 @@ body {
   margin: 55px 0;
 }
 
+.contact p {
+  text-align: center;
+  line-height: 30px;
+  font-family: 'inter', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .my-works .my-work-contain p {
   color: #dcdce8;
   font-size: 20px;
@@ -227,14 +235,6 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 32px;
-}
-
-.contact p {
-  text-align: center;
-  line-height: 30px;
-  font-family: 'inter', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 form {
