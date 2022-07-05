@@ -200,29 +200,42 @@
           with it
         </p>
       </div>
-      <form action="/form" method="post">
-        <input
-          type="text"
-          placeholder="Enter Name"
-          name="name"
-          id="name"
-          maxlength="30"
-        />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="example@gmail.com"
-        />
-        <textarea
-          name="comment"
-          id="comment"
-          cols="30"
-          rows="10"
-          placeholder="Enter text here"
-        ></textarea>
-        <button type="button" class="btn">See Project</button>
+      <form action="https://formspree.io/f/mlezyjrr" method="post">
+        <input type="text" placeholder="Enter Name" name="name" id="name" maxlength="30" required/>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" pattern=".+@.+" required/>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
+        <button type="submit" class="btn">See Project</button>
       </form>
+
+      <div class="division"></div>
+
+      <ul class="media-icons">
+        <li>
+          <a href="#">
+            <img src="./images/github.png" alt="image" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/Vector.png" alt="image" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/Vector2.png" alt="image" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/twitter.png" alt="image" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/Vector3.png" alt="image" />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

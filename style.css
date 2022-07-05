@@ -208,6 +208,60 @@ body {
   transition: all 1s linear;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.contact h2 {
+  color: #9390ff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.contact p {
+  text-align: center;
+  line-height: 30px;
+  font-family: 'inter', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+}
+
+form input {
+  margin: 10px 0;
+  width: 100%;
+  height: 60px;
+}
+
+form textarea {
+  margin: 10px 0;
+  width: 100%;
+}
+
+footer .division {
+  height: 2px;
+  width: 80%;
+  background-color:#646369;
+}
+
 .btn:hover {
   background-color: #7d73fc;
 }
