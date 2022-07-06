@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-size: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-bar {
@@ -278,4 +279,36 @@ footer .footer-email {
 
 .btn:active {
   background-color: #5e42d7;
+}
+
+.nav-bar .nav-desktop-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 8px;
+}
+.nav-desktop-links .desktop-head {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-bar .nav-desktop-links .links {
+  margin: 0 10px;
+}
+
+.nav-bar .nav-desktop-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .nav-mobile {
+    display: none;
+  }
 }
