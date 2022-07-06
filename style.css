@@ -311,4 +311,19 @@ footer .footer-email {
   .nav-mobile {
     display: none;
   }
+
+  .jumbotron {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px grey solid;
+  }
+
+  .prog-lang-skills .prog-lan {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    gap: 50px;
+    border-bottom: 1px grey solid;
+  }
 }
