@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-size: 100px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 .nav-bar {
@@ -29,13 +29,13 @@ body {
   width: 75%;
   margin: auto;
   text-align: center;
-  border-bottom: 1px grey solid;
 }
 
 .jumbotron h1 {
   color: #7d73fc;
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 45px;
 }
 
 .jumbotron h2 {
@@ -45,10 +45,11 @@ body {
   margin-top: -40px;
 }
 
-.jumbotron p {
+.prog-lang-skills p {
   color: #c8c8d4;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 
 .prog-lang-skills {
@@ -62,11 +63,22 @@ body {
 
 .prog-lang-skills .prog-lan {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 75%;
   margin: 0 auto;
+}
+
+.prog-lang-skills .prog-lan .prog-lan-ul {
+  display: flex;
+  justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
+  border-top: 1px grey solid;
   border-bottom: 1px grey solid;
+  margin: 20px 0;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .prog-lang-skills .prog-lan ul {
@@ -306,24 +318,65 @@ footer .footer-email {
   .nav-desktop {
     display: none;
   }
+
+  .jumbo-ton-contain img {
+    display: none;
+  }
 }
 @media (min-width: 769px) {
   .nav-mobile {
     display: none;
   }
 
+  body {
+    background-image: none;
+  }
+
+  .jumbo-ton-contain img {
+    width: 120px;
+    object-fit: contain;
+    position: relative;
+    left: 15px;
+    top: 160px;
+  }
+
   .jumbotron {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
     margin: auto;
     text-align: center;
-    border-bottom: 1px grey solid;
+  }
+
+  .jumbotron p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .prog-lang-skills .prog-lan {
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
     margin: 0 auto;
-    gap: 50px;
+  }
+
+  .prog-lang-skills .prog-lan .prog-lan-ul {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px grey solid;
+    flex-wrap: nowrap;
     border-bottom: 1px grey solid;
+  }
+
+  .prog-lang-skills {
+    width: 100vw;
+    background-image: url(./images/circle1header@2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150px;
+    background-position-y: 120px;
   }
 }
