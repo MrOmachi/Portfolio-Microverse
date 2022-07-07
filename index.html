@@ -9,45 +9,70 @@
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
+      <nav class="nav-mobile nav-bar">
         <h2>John Omachi</h2>
         <img src="./images/hamburger.png" alt="image" />
       </nav>
+      <nav class="nav-desktop nav-bar">
+        <h2 class="desktop-head">John Omachi</h2>
+        <ul class="nav-desktop-links">
+          <li class="links">
+            <a href="">Portfolio</a>
+          </li>
+          <li class="links">
+            <a href="">About</a>
+          </li>
+          <li class="links">
+            <a href=""> Contact </a>
+          </li>
+          <li class="links">
+            <a href="">
+              <img src="./images/messagebox.png" alt="inbox" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="jumbotron">
-      <h1>John Omachi</h1>
-      <h2>Software Developer</h2>
-      <p>
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
-      </p>
+    <section class="jumbo-ton-contain">
+      <img src="./images/circle1header@2x.png" alt="eclipes" />
+      <div class="jumbotron-desktop jumbotron">
+        <h1>John Omachi</h1>
+        <h2>Software Developer</h2>
+      </div>
     </section>
+
     <div class="prog-lang-skills">
       <div class="prog-lan">
-        <ul>
-          <li class="list-head">Language</li>
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>Css</li>
-        </ul>
-        <ul>
-          <li class="list-head">Frameworks</li>
-          <li>Bootstrap</li>
-          <li>Ruby on Rail</li>
-          <li>RSPec</li>
-          <li>CapyBara</li>
-          <li>Selenium</li>
-        </ul>
-        <ul>
-          <li class="list-head">Skills</li>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <div class="prog-lan-ul">
+          <ul>
+            <li class="list-head">Language</li>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+          <ul>
+            <li class="list-head">Frameworks</li>
+            <li>Bootstrap</li>
+            <li>Ruby on Rail</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+          <ul>
+            <li class="list-head">Skills</li>
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -55,7 +80,10 @@
       <div class="hidden">
         <p>work</p>
       </div>
-      <div>
+      <div class="work-below-desktop work-below">
+        <img src="./images/down-arrow.png" alt="" /> <span>work</span>
+      </div>
+      <div class="media-ul">
         <ul class="media-icons">
           <li>
             <a href="#">
@@ -64,7 +92,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="./images/Vector.png" alt="image" />
+              <img src="./images/linkedin1.png" alt="image" />
             </a>
           </li>
           <li>
@@ -83,9 +111,12 @@
             </a>
           </li>
         </ul>
-        <div class="work-below">
+        <div class="work-below-mobile work-below">
           <img src="./images/down-arrow.png" alt="" /> <span>work</span>
         </div>
+      </div>
+      <div class="work-below work-below-desktop">
+        <img src="./images/down-arrow.png" alt="" /> <span>work</span>
       </div>
       <div class="hidden">
         <p>work</p>
@@ -96,95 +127,112 @@
       <div class="recent-work-container">
         <div class="my-works">
           <h2>MY RECENT WORK</h2>
+          <div class="divider"></div>
           <div class="my-work-contain">
             <div class="my-work-card">
-              <img src="./images/ImgPlaceholder.png" alt="image" />
-              <h3 class="title">Multy-Post Stories</h3>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="prog-langs">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <button type="button" class="btn">See Project</button>
+              <div class="my-work-img1">
+                <img src="./images/ImgPlaceholder.png" alt="image" />
+              </div>
+              <div class="my-work-text">
+                <h3 class="title">Multy-Post Stories</h3>
+                <p class="work-description">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  standard dummy text.
+                </p>
+                <ul class="prog-langs">
+                  <li class="li-no-border">css</li>
+                  <li>html</li>
+                  <li>bootstrap</li>
+                  <li>Ruby</li>
+                </ul>
+                <button type="button" class="btn">See Project</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="recent-work-container1">
-        <div class="my-works">
+        <div class="my-works1 my-works">
           <div class="my-work-contain">
-            <div class="my-work-card">
-              <img src="./images/ImgPlaceholder.png" alt="image" />
-              <h3 class="title">Multy-Post Stories</h3>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="prog-langs">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <button type="button" class="btn">See Project</button>
+            <div class="my-work-card1 my-work-card">
+              <div class="my-work-img1">
+                <img src="./images/ImgPlaceholder.png" alt="image" />
+              </div>
+              <div class="my-work-text">
+                <h3 class="title">Multy-Post Stories</h3>
+                <p class="work-description">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  standard dummy text.
+                </p>
+                <ul class="prog-langs">
+                  <li class="li-no-border">css</li>
+                  <li>html</li>
+                  <li>bootstrap</li>
+                  <li>Ruby</li>
+                </ul>
+                <button type="button" class="btn">See Project</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="recent-work-container2">
-        <div class="my-works">
+        <div class="my-works2 my-works">
           <div class="my-work-contain">
-            <div class="my-work-card">
-              <img src="./images/ImgPlaceholder.png" alt="image" />
-              <h3 class="title">Multy-Post Stories</h3>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="prog-langs">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <button type="button" class="btn">See Project</button>
+            <div class="my-work-card my-work-card2">
+              <div class="my-work-img1">
+                <img src="./images/ImgPlaceholder.png" alt="image" />
+              </div>
+              <div class="my-work-text">
+                <h3 class="title">Multy-Post Stories</h3>
+                <p class="work-description">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  standard dummy text.
+                </p>
+                <ul class="prog-langs">
+                  <li class="li-no-border">css</li>
+                  <li>html</li>
+                  <li>bootstrap</li>
+                  <li>Ruby</li>
+                </ul>
+                <button type="button" class="btn">See Project</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="recent-work-container3">
-        <div class="my-works">
+        <div class="my-works3 my-works">
           <div class="my-work-contain">
-            <div class="my-work-card">
-              <img src="./images/ImgPlaceholder.png" alt="image" />
-              <h3 class="title">Multy-Post Stories</h3>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="prog-langs">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <button type="button" class="btn">See Project</button>
+            <div class="my-work-card3 my-work-card">
+              <div class="my-work-img1">
+                <img src="./images/ImgPlaceholder.png" alt="image" />
+              </div>
+              <div class="my-work-text">
+                <h3 class="title">Multy-Post Stories</h3>
+                <p class="work-description">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  standard dummy text.
+                </p>
+                <ul class="prog-langs">
+                  <li class="li-no-border">css</li>
+                  <li>html</li>
+                  <li>bootstrap</li>
+                  <li>Ruby</li>
+                </ul>
+                <button type="button" class="btn">See Project</button>
+              </div>
             </div>
           </div>
         </div>
@@ -193,7 +241,8 @@
 
     <footer>
       <div class="contact">
-        <h2>CONTACT US</h2>
+        <h2 class="h2-mobile">CONTACT US</h2>
+        <h2 class="h2-desktop">Let’s chat!</h2>
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
@@ -228,36 +277,37 @@
         ></textarea>
         <button type="submit" class="btn">See Project</button>
       </form>
-
       <div class="division"></div>
-      <ul class="media-icons">
-        <li>
-          <a href="#">
-            <img src="./images/github.png" alt="image" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/Vector.png" alt="image" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/Vector2.png" alt="image" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/twitter.png" alt="image" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/Vector3.png" alt="image" />
-          </a>
-        </li>
-      </ul>
-      <p class="footer-email">omachi.john@yahoo.com</p>
+      <div class="icons-email">
+        <ul class="icons-email-li media-icons">
+          <li>
+            <a href="#">
+              <img src="./images/github.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/linkedin1.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/Vector2.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/twitter.png" alt="image" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/Vector3.png" alt="image" />
+            </a>
+          </li>
+        </ul>
+        <p class="footer-email">omachi.john@yahoo.com</p>
+      </div>
     </footer>
   </body>
 </html>

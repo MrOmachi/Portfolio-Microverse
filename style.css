@@ -28,13 +28,13 @@ body {
   width: 75%;
   margin: auto;
   text-align: center;
-  border-bottom: 1px grey solid;
 }
 
 .jumbotron h1 {
   color: #7d73fc;
   font-size: 48px;
   font-weight: 700;
+  margin-bottom: 45px;
 }
 
 .jumbotron h2 {
@@ -44,10 +44,11 @@ body {
   margin-top: -40px;
 }
 
-.jumbotron p {
+.prog-lang-skills p {
   color: #c8c8d4;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 
 .prog-lang-skills {
@@ -61,11 +62,22 @@ body {
 
 .prog-lang-skills .prog-lan {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 75%;
   margin: 0 auto;
+}
+
+.prog-lang-skills .prog-lan .prog-lan-ul {
+  display: flex;
+  justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
+  border-top: 1px grey solid;
   border-bottom: 1px grey solid;
+  margin: 20px 0;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .prog-lang-skills .prog-lan ul {
@@ -76,6 +88,11 @@ body {
   color: #9490ff;
   font-size: 12px;
   font-weight: 500;
+}
+
+.media-icons li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .prog-lang-skills .prog-lan ul li {
@@ -93,10 +110,7 @@ body {
 }
 
 .media-icons {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-  gap: 15px;
 }
 
 .social-media .hidden {
@@ -112,7 +126,7 @@ body {
 
 .recent-works {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
 }
 
 .recent-work-container {
@@ -192,9 +206,9 @@ body {
 .my-works .my-work-contain ul {
   display: flex;
   gap: 10px;
+  margin-left: -50px;
   list-style: none;
   color: #fff;
-  margin: 40px 0;
 }
 
 .my-works .my-work-contain ul li {
@@ -205,6 +219,11 @@ body {
   font-size: 15px;
 }
 
+.my-works .my-work-contain ul .li-no-border {
+  border-left: none !important;
+  padding-right: 0 !important;
+}
+
 .btn {
   padding: 20px;
   background-color: #7d73fc;
@@ -213,6 +232,7 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
   border: none;
+  cursor: pointer;
   transition: all 1s linear;
 }
 
@@ -278,4 +298,296 @@ footer .footer-email {
 
 .btn:active {
   background-color: #5e42d7;
+}
+
+.nav-bar .nav-desktop-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-desktop-links .desktop-head {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-bar .nav-desktop-links .links {
+  margin: 0 10px;
+}
+
+.nav-bar .nav-desktop-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .jumbo-ton-contain img {
+    display: none;
+  }
+
+  .social-media .work-below-desktop {
+    display: none;
+  }
+
+  .contact .h2-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .jumbo-ton-contain img {
+    width: 120px;
+    object-fit: contain;
+    position: relative;
+    left: 15px;
+    top: 160px;
+  }
+
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .jumbotron p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .prog-lang-skills .prog-lan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .prog-lang-skills .prog-lan .prog-lan-ul {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px grey solid;
+    flex-wrap: nowrap;
+    border-bottom: 1px grey solid;
+  }
+
+  .prog-lang-skills {
+    width: 100vw;
+    background-image: url(./images/circle1header@2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150px;
+    background-position-y: 120px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .social-media .work-below {
+    display: none;
+  }
+
+  .social-media .work-below-desktop {
+    display: flex;
+  }
+
+  .my-work-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .my-work-card1,
+  .my-work-card3 {
+    flex-direction: row-reverse;
+  }
+
+  .my-works .my-work-contain h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .icons-email p {
+    font-size: 16px;
+  }
+
+  .my-works .my-work-contain p {
+    color: #dcdce8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10px 0;
+  }
+
+  .my-works .my-work-contain ul li {
+    border-left: 1px grey solid;
+    padding-left: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 45%;
+  }
+
+  footer .division {
+    visibility: hidden;
+  }
+
+  form input {
+    margin: 10px 0;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+  }
+
+  form textarea {
+    margin: 10px 0;
+    width: 100%;
+    height: 120px;
+    padding: 0 15px;
+  }
+
+  .contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px;
+    background-color: #7d73fc;
+    color: #edecff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .recent-work-container1 img {
+    height: 280px;
+  }
+
+  .recent-work-container {
+    background-image: url(./images/Ellipse\ 19@2x.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-y: -151px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container1 {
+    background-image: url(./images/Ellipse20.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right;
+    background-position-y: -1px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container2 {
+    background-image: url(./images/Ellipse21@2x.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-y: 1px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container3 {
+    background-image: url(./images/Ellipse22@2x.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: -10px;
+    background-position: right;
+    padding: 30px 0;
+  }
+
+  .my-works h2 {
+    width: 100%;
+    border-bottom: none;
+    color: #9490ff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
+  .recent-works .divider {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron h1 {
+    color: #7d73fc;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: -100px;
+  }
+
+  .icons-email {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons-email-li {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  .icons-email-li li a img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact .h2-mobile {
+    display: none;
+  }
+
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  .my-works .my-work-contain ul {
+    display: flex;
+    gap: 10px;
+    margin-left: -50px;
+    list-style: none;
+    color: #fff;
+  }
 }
