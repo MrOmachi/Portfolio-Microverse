@@ -124,7 +124,7 @@ body {
 
 .recent-works {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
 }
 
 .recent-work-container {
