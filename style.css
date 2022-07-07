@@ -105,10 +105,12 @@ body {
 }
 
 .media-icons {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-  gap: 15px;
+}
+
+.media-icons li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .social-media .hidden {
