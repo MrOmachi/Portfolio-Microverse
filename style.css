@@ -563,6 +563,25 @@ footer .footer-email {
     margin-top: -100px;
   }
 
+  .icons-email {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons-email p {
+    font-size: 16px;
+  }
+
+  .icons-email-li {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  .icons-email-li li a img {
+    width: 15px;
+    height: 15px;
+  }
+
   .contact .h2-mobile {
     display: none;
   }
