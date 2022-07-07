@@ -314,7 +314,7 @@ footer .footer-email {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-desktop {
     display: none;
   }
@@ -322,8 +322,16 @@ footer .footer-email {
   .jumbo-ton-contain img {
     display: none;
   }
+  .social-media .work-below-desktop {
+    display: none;
+  }
+
+  .contact .h2-desktop {
+    display: none;
+  }
 }
-@media (min-width: 769px) {
+
+@media (min-width: 768px) {
   .nav-mobile {
     display: none;
   }
@@ -378,5 +386,182 @@ footer .footer-email {
     background-position: right;
     background-size: 150px;
     background-position-y: 120px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .social-media .work-below {
+    display: none;
+  }
+
+  .social-media .work-below-desktop {
+    display: flex;
+  }
+
+  .my-work-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .my-work-card1,
+  .my-work-card3 {
+    flex-direction: row-reverse;
+  }
+
+  .my-works .my-work-contain h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .my-works .my-work-contain p {
+    color: #dcdce8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10px 0;
+  }
+
+  .my-works .my-work-contain ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+  }
+
+  .my-works .my-work-contain ul li {
+    border-left: 1px grey solid;
+    padding-left: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 45%;
+  }
+
+  footer .division {
+    visibility: hidden;
+  }
+
+  .btn {
+    margin: 30px 0;
+  }
+
+  form input {
+    margin: 10px 0;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+  }
+
+  form textarea {
+    margin: 10px 0;
+    width: 100%;
+    height: 120px;
+    padding: 0 15px;
+  }
+
+  .contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px;
+    background-color: #7d73fc;
+    color: #edecff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    border: none;
+    transition: all 1s linear;
+  }
+
+  .recent-work-container {
+    background-image: url(./images/Ellipse\ 19@2x.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-y: -151px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container1 {
+    background-image: url(./images/Ellipse20.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right;
+    background-position-y: -1px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container2 {
+    background-image: url(./images/Ellipse21@2x.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-y: 1px;
+    padding: 30px 0;
+  }
+
+  .recent-work-container3 {
+    background-image: url(./images/Ellipse22@2x.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: -10px;
+    background-position: right;
+    padding: 30px 0;
+  }
+
+  .my-works h2 {
+    width: 100%;
+    border-bottom: none;
+    color: #9490ff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
+  .recent-works .divider {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron h1 {
+    color: #7d73fc;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: -100px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact .h2-mobile {
+    display: none;
+  }
+
+  .contact h2 {
+    font-size: 25px;
   }
 }
