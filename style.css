@@ -232,6 +232,7 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
   border: none;
+  cursor: pointer;
   transition: all 1s linear;
 }
 
