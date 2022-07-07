@@ -4,7 +4,6 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-size: 100px;
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 .nav-bar {
@@ -299,6 +298,7 @@ footer .footer-email {
   align-items: center;
   gap: 8px;
 }
+
 .nav-desktop-links .desktop-head {
   color: #fff;
   font-size: 18px;
@@ -322,6 +322,7 @@ footer .footer-email {
   .jumbo-ton-contain img {
     display: none;
   }
+
   .social-media .work-below-desktop {
     display: none;
   }
@@ -423,6 +424,10 @@ footer .footer-email {
     margin: 10px;
   }
 
+  .contact p {
+    font-size: 16px;
+  }
+
   .my-works .my-work-contain p {
     color: #dcdce8;
     font-size: 16px;
@@ -459,10 +464,6 @@ footer .footer-email {
     visibility: hidden;
   }
 
-  .btn {
-    margin: 30px 0;
-  }
-
   form input {
     margin: 10px 0;
     width: 100%;
@@ -491,9 +492,8 @@ footer .footer-email {
     color: #edecff;
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     border: none;
-    transition: all 1s linear;
   }
 
   .recent-work-container {
@@ -551,10 +551,6 @@ footer .footer-email {
     font-size: 48px;
     font-weight: 700;
     margin-top: -100px;
-  }
-
-  .contact p {
-    font-size: 16px;
   }
 
   .contact .h2-mobile {
