@@ -206,9 +206,9 @@ body {
 .my-works .my-work-contain ul {
   display: flex;
   gap: 10px;
+  margin-left: -50px;
   list-style: none;
   color: #fff;
-  margin: 40px 0;
 }
 
 .my-works .my-work-contain ul li {
@@ -217,6 +217,11 @@ body {
   font-weight: 500;
   line-height: 20px;
   font-size: 15px;
+}
+
+.my-works .my-work-contain ul .li-no-border {
+  border-left: none !important;
+  padding-right: 0 !important;
 }
 
 .btn {
@@ -494,8 +499,11 @@ footer .footer-email {
     color: #edecff;
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 0;
-    border: none;
+    margin-top: 20px;
+  }
+
+  .recent-work-container1 img {
+    height: 280px;
   }
 
   .recent-work-container {
@@ -561,5 +569,13 @@ footer .footer-email {
 
   .contact h2 {
     font-size: 25px;
+  }
+
+  .my-works .my-work-contain ul {
+    display: flex;
+    gap: 10px;
+    margin-left: -50px;
+    list-style: none;
+    color: #fff;
   }
 }
