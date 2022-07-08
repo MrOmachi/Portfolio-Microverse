@@ -18,6 +18,8 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  animation-name: rotate;
+  animation-duration: 2s;
 }
 
 .nav-bar img {
@@ -93,6 +95,12 @@ body {
 .media-icons li {
   display: inline-block;
   margin: 0 10px;
+  transition: all 500ms ease-in;
+}
+
+.media-icons li:hover {
+  transform: scale(1.2);
+  transform: translate(3px, 3px);
 }
 
 .prog-lang-skills .prog-lan ul li {
@@ -293,7 +301,7 @@ footer .footer-email {
 }
 
 .btn:hover {
-  background-color: #7d73fc;
+  background-color: #2e00fd;
 }
 
 .btn:active {
@@ -313,13 +321,30 @@ footer .footer-email {
   font-weight: 500;
 }
 
+.links:hover {
+  background-color: #7d73fc;
+  border-radius: 5px;
+  transform: scale(1);
+}
+
 .nav-bar .nav-desktop-links .links {
   margin: 0 10px;
+  transition: all 1s ease-in;
 }
 
 .nav-bar .nav-desktop-links a {
   text-decoration: none;
   color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 767px) {
