@@ -92,7 +92,6 @@ body {
   font-weight: 500;
 }
 
-
 .media-icons li {
   display: inline-block;
   margin: 0 10px;
@@ -322,6 +321,12 @@ footer .footer-email {
   font-weight: 500;
 }
 
+.links:hover {
+  background-color: #7d73fc;
+  border-radius: 5px;
+  transform: scale(1);
+}
+
 .nav-bar .nav-desktop-links .links {
   margin: 0 10px;
   transition: all 1s ease-in;
@@ -330,13 +335,6 @@ footer .footer-email {
 .nav-bar .nav-desktop-links a {
   text-decoration: none;
   color: #fff;
-
-}
-
-.links:hover {
-  background-color: #7d73fc;
-  border-radius: 5px;
-  transform: scale(1.);
 }
 
 @keyframes rotate {
