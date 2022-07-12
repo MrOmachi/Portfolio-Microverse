@@ -242,7 +242,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 1s linear;
-  filter: contrast(6);
+  filter: contrast(5);
 }
 
 footer {
