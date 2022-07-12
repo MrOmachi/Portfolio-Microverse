@@ -450,6 +450,19 @@ footer .footer-email {
     flex-direction: row-reverse;
   }
 
+  .my-works .my-work-img1 {
+    width: 60%;
+  }
+
+  .my-works img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .my-works .my-work-text {
+    width: 40%;
+  }
+
   .my-works .my-work-contain h3 {
     color: #fff;
     font-size: 25px;
@@ -522,10 +535,6 @@ footer .footer-email {
     font-size: 12px;
     font-weight: 500;
     margin-top: 20px;
-  }
-
-  .recent-work-container1 img {
-    height: 280px;
   }
 
   .recent-work-container {
