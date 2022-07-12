@@ -413,6 +413,10 @@ footer .footer-email {
     border-bottom: 1px grey solid;
   }
 
+  .prog-lang-skills .prog-lan ul {
+    padding-left: 0;
+  }
+
   .prog-lang-skills {
     width: 100vw;
     background-image: url(./images/circle1header@2x.png);
