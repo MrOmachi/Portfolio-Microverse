@@ -26,6 +26,30 @@ body {
   height: 30px;
 }
 
+/* .................... */
+
+.menuList {
+  display: none;
+}
+
+.menuList li {
+  margin: 15px;
+}
+
+.close {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+/* ....................... */
+
 .jumbotron {
   width: 75%;
   margin: auto;
