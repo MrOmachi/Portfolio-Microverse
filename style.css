@@ -26,29 +26,28 @@ body {
   height: 30px;
 }
 
-/* .................... */
-
 .menuList {
-  /*display: none; */
+  list-style: none;
+  text-align: center;
+  background-color: #191765;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.menuList a {
+  text-decoration: none;
+  color: white;
 }
 
 .menuList li {
+  padding: 10px;
   margin: 15px;
-}
-
-.close {
-  /* display: none; */
 }
 
 .hidden {
   display: none;
 }
-
-.show {
-  display: inline-block;
-}
-
-/* ....................... */
 
 .jumbotron {
   width: 75%;
