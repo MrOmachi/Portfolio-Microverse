@@ -18,13 +18,13 @@
               id="hamburger"
               alt="hamburger icon"
             />
-            <img src="./images/close.png" class="close" id="closeX" alt="" />
+            <img src="./images/close.png" class="hidden close" id="closeX" alt="" />
           </div>
         </div>
-        <ul id="menu" class="menuList">
-          <li class="menuLinks">Portfolio</li>
-          <li class="menuLinks">About</li>
-          <li class="menuLinks">Contact</li>
+        <ul id="menu" class="hidden menuList">
+          <li id="menu-link1" class="menuLinks"><a href="#works">Portfolio</a></li>
+          <li id="menu-link2" class="menuLinks"><a href="#about">About</a></li>
+          <li id="menu-link3" class="menuLinks"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <nav aria-label="desktopNav" class="nav-desktop nav-bar">
@@ -139,7 +139,7 @@
       </div>
     </div>
 
-    <section class="recent-works">
+    <section class="recent-works" id="works">
       <div class="recent-work-container">
         <div class="my-works">
           <h2>MY RECENT WORK</h2>
@@ -256,8 +256,8 @@
     </section>
 
     <footer>
-      <div class="contact">
-        <h2 class="h2-mobile">CONTACT US</h2>
+      <div class="contact" id="about">
+        <h2 class="h2-mobile" id="contact">CONTACT US</h2>
         <h2 class="h2-desktop">Let’s chat!</h2>
         <p>
           If you have an application you are interested in developing, a feature

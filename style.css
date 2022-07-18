@@ -29,7 +29,7 @@ body {
 /* .................... */
 
 .menuList {
-  display: none;
+  /*display: none; */
 }
 
 .menuList li {
@@ -37,7 +37,7 @@ body {
 }
 
 .close {
-  display: none;
+  /* display: none; */
 }
 
 .hidden {
