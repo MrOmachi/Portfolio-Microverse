@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+.noVisibility {
+  visibility: hidden;
+}
+
 .jumbotron {
   width: 75%;
   margin: auto;
