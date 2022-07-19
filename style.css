@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-size: 100px;
+  position: relative;
 }
 
 .nav-bar {
@@ -29,10 +30,13 @@ body {
 .menuList {
   list-style: none;
   background-color: #191765;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
+  z-index: 1;
+  overflow-y: hidden;
   background-image: url(./images/shapemobile2.svg);
   background-repeat: no-repeat;
 }
@@ -44,6 +48,8 @@ body {
   background-position: right;
   background-position-y: 520px;
   background-position-x: 300px;
+  clear: both;
+  padding-top: 40px;
 }
 
 .menuList a {
@@ -67,6 +73,14 @@ body {
 
 .hidden {
   display: none;
+}
+
+.close {
+  padding: 20px 40px 0 0;
+  position: fixed;
+  right: 0;
+  top: -5px;
+  z-index: 99;
 }
 
 .noVisibility {
