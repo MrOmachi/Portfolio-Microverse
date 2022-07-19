@@ -33,6 +33,17 @@ body {
   left: 0;
   right: 0;
   height: 100vh;
+  background-image: url(./images/shapemobile2.svg);
+  background-repeat: no-repeat;
+}
+
+.menuListUl {
+  background-image: url(./images/shape1@2x.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 520px;
+  background-position-x: 300px;
 }
 
 .menuList a {
