@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: 50px;
   background-size: 100px;
+  position: relative;
 }
 
 .nav-bar {
@@ -24,6 +25,66 @@ body {
 
 .nav-bar img {
   height: 30px;
+}
+
+.menuList {
+  list-style: none;
+  background-color: #191765;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow-y: hidden;
+  background-image: url(./images/shapemobile2.svg);
+  background-repeat: no-repeat;
+}
+
+.menuListUl {
+  background-image: url(./images/shape1@2x.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 520px;
+  background-position-x: 300px;
+  clear: both;
+  padding-top: 40px;
+}
+
+.menuList a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.menuList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 15px;
+}
+
+.menuList li img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  padding: 20px 40px 0 0;
+  position: fixed;
+  right: 0;
+  top: -5px;
+  z-index: 99;
+}
+
+.noVisibility {
+  visibility: hidden;
 }
 
 .jumbotron {
