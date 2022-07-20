@@ -89,6 +89,24 @@ function display() {
   const divButton = document.createElement('div');
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
+
+  popScreen.className = 'popbody';
+  modalSection.className = 'popupsection';
+  sectionDivContainer.className = 'popDivContainer';
+  sectionDiv.className = 'popDiv';
+  sectionHeader.className = 'popHeader';
+  divTitle.className = 'popdivTitle';
+  divClosImg.className = 'closeX';
+  divImgContainer.className = 'divImgContain';
+  divImg.className = 'popdivImg';
+  divParagraph.className = 'divParagraphagraph';
+  ulLi1st.className = 'ulMain';
+  ulLi1.className = 'ulItems1';
+  ulLi2.className = 'ulItems2';
+  ulLi3.className = 'ulItems3';
+  divButton.className = 'btnDiv';
+  popBtn1.className = 'button1';
+  popBtn2.className = 'button2';
 }
 
 btnId1.addEventListener('click', () => {
