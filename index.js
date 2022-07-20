@@ -124,6 +124,29 @@ function display() {
   sectionDiv.appendChild(divButton);
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
+
+  document.querySelector('.popdivTitle').textContent = workArr[i].title;
+  document.querySelector('.closeX').src = 'images/close.png';
+  document.querySelector('.popdivImg').src = workArr[i].image;
+  document.querySelector('.divParagraphagraph').textContent =
+    workArr[i].paragraph;
+  document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
+  document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
+  document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
+  document.querySelector('.button1').textContent = `See Live`;
+  document.querySelector('.button2').textContent = `See Source`;
+
+  divClosImg.addEventListener('click', () => {
+    modalSection.remove();
+  });
+
+  popBtn1.addEventListener('click', () => {
+    window.open(workArr[i].btnLive);
+  });
+
+  popBtn2.addEventListener('click', () => {
+    window.open(workArr[i].btnSource);
+  });
 }
 
 btnId1.addEventListener('click', () => {
