@@ -107,6 +107,23 @@ function display() {
   divButton.className = 'btnDiv';
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
+
+  popScreen.appendChild(modalSection);
+  modalSection.appendChild(sectionDivContainer);
+  sectionDivContainer.appendChild(sectionDiv);
+  sectionDiv.appendChild(sectionHeader);
+  sectionHeader.appendChild(divTitle);
+  sectionHeader.appendChild(divClosImg);
+  sectionDiv.appendChild(divImgContainer);
+  divImgContainer.appendChild(divImg);
+  sectionDiv.appendChild(divParagraph);
+  sectionDiv.appendChild(ulLi1st);
+  ulLi1st.appendChild(ulLi1);
+  ulLi1st.appendChild(ulLi2);
+  ulLi1st.appendChild(ulLi3);
+  sectionDiv.appendChild(divButton);
+  divButton.appendChild(popBtn1);
+  divButton.appendChild(popBtn2);
 }
 
 btnId1.addEventListener('click', () => {
