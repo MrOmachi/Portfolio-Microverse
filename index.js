@@ -92,7 +92,8 @@ function ErrorMessage() {
       },
     ];
     console.log(obj);
-    
+    const check = localStorage.setItem('clients', JSON.stringify(obj));
+    !check ? alert('works') : myForm.submit();
   }
 }
 
