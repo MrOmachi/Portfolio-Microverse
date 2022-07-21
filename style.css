@@ -412,9 +412,8 @@ footer .footer-email {
 }
 
 .error {
-  color: yellow;
-  font-size: 19px;
-  text-align: left !important;
+  color: red;
+  text-align: center;
 }
 
 .popupsection {
@@ -847,13 +846,13 @@ footer .footer-email {
   }
 
   .popHeader {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 
   .divImgContain {
     text-align: center;
-    width: 80%;
+    width: 75%;
     height: 300px;
     margin: auto;
     object-fit: cover;

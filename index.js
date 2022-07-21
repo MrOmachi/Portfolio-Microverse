@@ -6,12 +6,9 @@ const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
-const nameError = document.getElementById('nameError');
-const emailError = document.getElementById('emailError');
-const textError = document.getElementById('textError');
-const userName = document.getElementById('userName');
 const email = document.getElementById('email');
 const comment = document.getElementById('comment');
+const myForm = document.getElementById('myForm');
 const workArr = [
   {
     id: '0',
@@ -77,37 +74,22 @@ let i = 0;
   });
 });
 
-function ClearErrors() {
-  if (userName.value !== '') {
-    nameError.innerHTML = '';
-  }
-  if (email.value !== '') {
-    emailError.innerHTML = '';
-  }
-  if (comment.value !== '') {
-    textError.innerHTML = '';
-  }
-}
-
 function ErrorMessage() {
-  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailRegex =
+    /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
 
-  if (userName.value === '') {
-    ClearErrors();
-    nameError.innerHTML = 'Kindly input a valid Name';
-    return false;
-  }
   if (!email.value.match(emailRegex)) {
-    ClearErrors();
-    emailError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
-    return false;
-  }
-  if (comment.value === '') {
-    ClearErrors();
-    textError.innerHTML = 'Kindly leave a coment';
-    return false;
+    textError.innerHTML =
+      'Kindly provide valid email address without the use of uppercase';
+  } else {
+    myForm.submit();
   }
 }
+
+myForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  ErrorMessage();
+});
 
 function display() {
   const popScreen = document.querySelector('body');
@@ -166,7 +148,8 @@ function display() {
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent =
+    workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
@@ -205,5 +188,3 @@ btnId4.addEventListener('click', () => {
   i = 3;
   display();
 });
-
-module.exports = ErrorMessage();
