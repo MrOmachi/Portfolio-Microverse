@@ -77,6 +77,26 @@ let i = 0;
   });
 });
 
+function ErrorMessage() {
+  const emailRegex =
+    /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+
+  if (userName.value == '') {
+    ClearErrors();
+    nameError.innerHTML = 'Kindly input a valid Name';
+    return false;
+  } else if (!email.value.match(emailRegex)) {
+    ClearErrors();
+    emailError.innerHTML =
+      'Kindly provide valid email address without the use of uppercase';
+    return false;
+  } else if (comment.value == '') {
+    ClearErrors();
+    textError.innerHTML = 'Kindly leave a coment';
+    return false;
+  }
+}
+
 function display() {
   const popScreen = document.querySelector('body');
   const modalSection = document.createElement('section');
