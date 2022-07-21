@@ -97,6 +97,18 @@ function ErrorMessage() {
   }
 }
 
+function ClearErrors() {
+  if (userName.value !== '') {
+    nameError.innerHTML = '';
+  }
+  if (email.value !== '') {
+    emailError.innerHTML = '';
+  }
+  if (comment.value !== '') {
+    textError.innerHTML = '';
+  }
+}
+
 function display() {
   const popScreen = document.querySelector('body');
   const modalSection = document.createElement('section');
