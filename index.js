@@ -6,13 +6,6 @@ const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
-const nameError = document.getElementById('nameError');
-const emailError = document.getElementById('emailError');
-const textError = document.getElementById('textError');
-let userName = document.getElementById('userName');
-let email = document.getElementById('email');
-let comment = document.getElementById('comment');
-const btnContact = document.getElementById('btnContact');
 const workArr = [
   {
     id: '0',
@@ -135,8 +128,7 @@ function display() {
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent =
-    workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
