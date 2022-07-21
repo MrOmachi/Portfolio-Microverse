@@ -7,7 +7,7 @@ const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
 const email = document.getElementById('email');
-const comment = document.getElementById('comment');
+const textError = document.getElementById('textError');
 const myForm = document.getElementById('myForm');
 const workArr = [
   {
@@ -75,18 +75,16 @@ let i = 0;
 });
 
 function ErrorMessage() {
-  const emailRegex =
-    /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
 
   if (!email.value.match(emailRegex)) {
-    textError.innerHTML =
-      'Kindly provide valid email address without the use of uppercase';
+    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
   } else {
     myForm.submit();
   }
 }
 
-myForm.addEventListener('submit', function (e) {
+myForm.addEventListener('submit', (e) => {
   e.preventDefault();
   ErrorMessage();
 });
@@ -148,8 +146,7 @@ function display() {
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent =
-    workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
