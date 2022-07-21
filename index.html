@@ -284,25 +284,29 @@
           with it
         </p>
       </div>
-      <form action="https://formspree.io/f/mlezyjrr" method="post">
+      <form
+        action="https://formspree.io/f/mlezyjrr"
+        method="post"
+        onsubmit="return ErrorMessage()"
+      >
         <input
           aria-label="name"
           type="text"
           placeholder="Enter Name"
           name="name"
-          id="name"
+          id="userName"
           maxlength="30"
-          required
         />
+        <span class="error" id="nameError"></span>
+
         <input
           aria-label="email"
           type="email"
           name="email"
           id="email"
           placeholder="example@gmail.com"
-          pattern=".+@.+"
-          required
         />
+        <span class="error" id="emailError"></span>
         <textarea
           aria-label="comment"
           name="comment"
@@ -311,9 +315,9 @@
           rows="10"
           placeholder="Enter text here"
           maxlength="500"
-          required
         ></textarea>
-        <button type="submit" class="btn">See Project</button>
+        <span class="error" id="textError"></span>
+        <button type="submit" id="btnContact" class="btn">See Project</button>
       </form>
       <div class="division"></div>
       <div class="icons-email">
