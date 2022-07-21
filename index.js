@@ -6,6 +6,9 @@ const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
+const email = document.getElementById('email');
+const textError = document.getElementById('textError');
+const myForm = document.getElementById('myForm');
 const workArr = [
   {
     id: '0',
@@ -69,6 +72,21 @@ let i = 0;
     hamburger.classList.toggle('hidden');
     logoMobile.classList.toggle('noVisibility');
   });
+});
+
+function ErrorMessage() {
+  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+
+  if (!email.value.match(emailRegex)) {
+    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
+  } else {
+    myForm.submit();
+  }
+}
+
+myForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  ErrorMessage();
 });
 
 function display() {
