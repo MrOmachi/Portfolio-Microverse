@@ -96,11 +96,13 @@ function objArr() {
 }
 
 function ErrorMessage() {
-  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailRegex =
+    /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   if (email.value.match(emailRegex)) {
     objArr();
   } else {
-    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
+    textError.innerHTML =
+      'Kindly provide valid email address without the use of uppercase';
   }
 }
 
@@ -109,6 +111,7 @@ myForm.addEventListener('submit', (e) => {
   ErrorMessage();
 });
 
+// CREATE HTML ELEMENTS
 function display() {
   const popScreen = document.querySelector('body');
   const modalSection = document.createElement('section');
@@ -128,6 +131,7 @@ function display() {
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
 
+  //CREATE A CLASS FOR HTML ELEMENTS
   popScreen.className = 'popbody';
   modalSection.className = 'popupsection';
   sectionDivContainer.className = 'popDivContainer';
@@ -146,6 +150,7 @@ function display() {
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
 
+  //APPEND HTML ELEMENTS RESPECTIVELY
   popScreen.appendChild(modalSection);
   modalSection.appendChild(sectionDivContainer);
   sectionDivContainer.appendChild(sectionDiv);
@@ -163,10 +168,12 @@ function display() {
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
 
+  //CREATE ELEMENT CONTENTS
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent =
+    workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
