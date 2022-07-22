@@ -6,9 +6,7 @@ const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
-const userName = document.getElementById('userName');
 const email = document.getElementById('email');
-const comment = document.getElementById('comment');
 const textError = document.getElementById('textError');
 const myForm = document.getElementById('myForm');
 const workArr = [
@@ -65,6 +63,15 @@ const workArr = [
   },
 ];
 
+document.addEventListener('DOMContentLoaded', function () {
+  const local = JSON.parse(localStorage.getItem('userArr'));
+  if (local) {
+    userName.value = local.userName;
+    email.value = local.email;
+    comment.value = local.comment;
+  }
+});
+
 let i = 0;
 
 [closeX, menu, hamburger].forEach((elements) => {
@@ -76,24 +83,24 @@ let i = 0;
   });
 });
 
+function objArr() {
+  let obj = {
+    userName: userName.value,
+    email: email.value,
+    comment: comment.value,
+  };
+  localStorage.setItem('userArr', JSON.stringify(obj));
+  myForm.submit();
+}
+
 function ErrorMessage() {
   const emailRegex =
     /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
-
-  if (!email.value.match(emailRegex)) {
+  if (email.value.match(emailRegex)) {
+    objArr();
+  } else {
     textError.innerHTML =
       'Kindly provide valid email address without the use of uppercase';
-  } else {
-    let obj = [
-      {
-        userName: userName.value,
-        email: email.value,
-        comment: comment.value,
-      },
-    ];
-    console.log(obj);
-    const check = localStorage.setItem('clients', JSON.stringify(obj));
-    !check ? alert('works') : myForm.submit();
   }
 }
 
