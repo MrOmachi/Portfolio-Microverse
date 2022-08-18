@@ -6,21 +6,23 @@ const btnId1 = document.getElementById('btnId1');
 const btnId2 = document.getElementById('btnId2');
 const btnId3 = document.getElementById('btnId3');
 const btnId4 = document.getElementById('btnId4');
+const userName = document.getElementById('userName');
 const email = document.getElementById('email');
+const comment = document.getElementById('comment');
 const textError = document.getElementById('textError');
 const myForm = document.getElementById('myForm');
 const workArr = [
   {
     id: '0',
-    title: 'Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: 'Awesome Books Library',
+    image: 'images/desktop.png',
     paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+      'This educational project involves creating a straightforward website that shows a list of books and lets you add and remove books from that list. The intention is to use modules and learn ES6 syntax to make it more orderly. built with JavaScript, CSS and HTML.',
     ulList1: 'html',
     ulList2: 'Ruby on rail',
     ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    btnLive: 'https://mromachi.github.io/awsomeBooksInModules/',
+    btnSource: 'https://github.com/MrOmachi/awsomeBooksInModules.git',
   },
 
   {
@@ -63,6 +65,15 @@ const workArr = [
   },
 ];
 
+document.addEventListener('DOMContentLoaded', () => {
+  const local = JSON.parse(localStorage.getItem('userArr'));
+  if (local) {
+    userName.value = local.userName;
+    email.value = local.email;
+    comment.value = local.comment;
+  }
+});
+
 let i = 0;
 
 [closeX, menu, hamburger].forEach((elements) => {
@@ -74,13 +85,22 @@ let i = 0;
   });
 });
 
+function objArr() {
+  const obj = {
+    userName: userName.value,
+    email: email.value,
+    comment: comment.value,
+  };
+  localStorage.setItem('userArr', JSON.stringify(obj));
+  myForm.submit();
+}
+
 function ErrorMessage() {
   const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
-
-  if (!email.value.match(emailRegex)) {
-    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
+  if (email.value.match(emailRegex)) {
+    objArr();
   } else {
-    myForm.submit();
+    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
   }
 }
 
@@ -89,6 +109,7 @@ myForm.addEventListener('submit', (e) => {
   ErrorMessage();
 });
 
+// CREATE HTML ELEMENTS
 function display() {
   const popScreen = document.querySelector('body');
   const modalSection = document.createElement('section');
@@ -108,6 +129,7 @@ function display() {
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
 
+  // CREATE A CLASS FOR HTML ELEMENTS
   popScreen.className = 'popbody';
   modalSection.className = 'popupsection';
   sectionDivContainer.className = 'popDivContainer';
@@ -126,6 +148,7 @@ function display() {
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
 
+  // APPEND HTML ELEMENTS RESPECTIVELY
   popScreen.appendChild(modalSection);
   modalSection.appendChild(sectionDivContainer);
   sectionDivContainer.appendChild(sectionDiv);
@@ -143,6 +166,7 @@ function display() {
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
 
+  // CREATE ELEMENT CONTENTS
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;

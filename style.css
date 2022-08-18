@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #191765;
   background-image: url(./images/Ellipse\ 18@2x.png);
