@@ -96,11 +96,13 @@ function objArr() {
 }
 
 function ErrorMessage() {
-  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailRegex =
+    /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   if (email.value.match(emailRegex)) {
     objArr();
   } else {
-    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
+    textError.innerHTML =
+      'Kindly provide valid email address without the use of uppercase';
   }
 }
 
@@ -170,7 +172,8 @@ function display() {
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent =
+    workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;

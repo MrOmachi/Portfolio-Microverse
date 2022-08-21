@@ -563,6 +563,11 @@ footer .footer-email {
   .contact .h2-desktop {
     display: none;
   }
+
+  .my-works .my-work-contain img {
+    object-fit: contain;
+    width: 330px;
+  }
 }
 
 @media (min-width: 768px) {
