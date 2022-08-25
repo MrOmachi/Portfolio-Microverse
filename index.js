@@ -28,14 +28,14 @@ const workArr = [
   {
     id: '1',
     title: 'Second Multy Post - Stories ',
-    image: 'images/SnapshootPortfolio.png',
+    image: 'images/desktop22.png',
     paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+      ' A JavaScript project for the Leaderboard list app, using webpack and ES6 features. This project is MIT Licensed',
     ulList1: 'html',
     ulList2: 'Ruby on rail',
     ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    btnLive: 'https://snazzy-chebakia-6e07d3.netlify.app/',
+    btnSource: 'https://github.com/MrOmachi/Leaderboard.git',
   },
 
   {
@@ -96,13 +96,11 @@ function objArr() {
 }
 
 function ErrorMessage() {
-  const emailRegex =
-    /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailRegex = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   if (email.value.match(emailRegex)) {
     objArr();
   } else {
-    textError.innerHTML =
-      'Kindly provide valid email address without the use of uppercase';
+    textError.innerHTML = 'Kindly provide valid email address without the use of uppercase';
   }
 }
 
@@ -172,8 +170,7 @@ function display() {
   document.querySelector('.popdivTitle').textContent = workArr[i].title;
   document.querySelector('.closeX').src = 'images/close.png';
   document.querySelector('.popdivImg').src = workArr[i].image;
-  document.querySelector('.divParagraphagraph').textContent =
-    workArr[i].paragraph;
+  document.querySelector('.divParagraphagraph').textContent = workArr[i].paragraph;
   document.querySelector('.ulItems1').textContent = workArr[i].ulList1;
   document.querySelector('.ulItems2').textContent = workArr[i].ulList2;
   document.querySelector('.ulItems3').textContent = workArr[i].ulList3;
