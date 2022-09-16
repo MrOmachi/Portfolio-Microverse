@@ -40,28 +40,28 @@ const workArr = [
 
   {
     id: '2',
-    title: 'Third Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: 'Todo App, React JS',
+    image: 'images/todo.png',
     paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+      "This project is written in React JS with minimal npm scripts and commands. It is a minimal implementation of a 'To Do List' application. This helps trach the list of thing to do and the ones done already.",
     ulList1: 'html',
     ulList2: 'Ruby on rail',
     ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    btnLive: 'https://mromachi.github.io/Todo-App-React/',
+    btnSource: 'https://github.com/MrOmachi/Todo-App-React',
   },
 
   {
     id: '3',
-    title: 'Fourth Multy Post - Stories',
-    image: 'images/SnapshootPortfolio.png',
+    title: 'Movies Display',
+    image: 'images/capstone2.png',
     paragraph:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+      ' This JavaScript capstone project is built on the TVMAZE API, an external API. The cards display the movies information that was retrieved from the API. The user has the option to like and comment on the movies cards.',
     ulList1: 'html',
     ulList2: 'Ruby on rail',
     ulList3: 'css',
-    btnLive: 'https://mromachi.github.io/Portfolio-Microverse/',
-    btnSource: 'https://github.com/MrOmachi/Portfolio-Microverse ',
+    btnLive: 'https://creative-snickerdoodle-94ec3b.netlify.app/',
+    btnSource: 'https://github.com/MrOmachi/capestone-II',
   },
 ];
 
